@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Stock Price "Predictor"</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="ticker" placeholder="Enter Ticker (e.g. TSLA)">
+        <button type="submit">Predict Tomorrow</button>
+    </form>
+
+    {% if ticker %}
+        <h3>Results for {{ ticker }}:</h3>
+        <p>Last Closing Price: ${{ current_price }}</p>
+        <p><strong>Predicted Price: ${{ predicted_price }}</strong></p>
+        <small>*Note: This is a simple linear trend, not financial advice!</small>
+    {% endif %}
+    <a href="{% url 'home' %}">Home</a>
+</body>
+</html>
