@@ -39,7 +39,8 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "cbcportofolio.com",
     "www.cbcportofolio.com",
-    "98.93.54.131"
+    "98.93.54.131",
+    "127.0.0.1"
 ]
 
 #SECURE_SSL_REDIRECT = True
