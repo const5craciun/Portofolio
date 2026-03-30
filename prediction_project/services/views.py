@@ -6,11 +6,9 @@ def ml_predictor(request):
 
     if request.method == "POST":
         ticker = request.POST.get("ticker", "AAPL")
-
         result = predict_stock_price(ticker)
 
         if result:
-            result["ticker"] = ticker
             context = result
 
     return render(request, "projects_html/stock_pred_lr/stock_prediction_lr.html", context)
