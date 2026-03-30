@@ -1,4 +1,14 @@
 # config/settings.py
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 INSTALLED_APPS = [
     'django.contrib.auth',
@@ -6,7 +16,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'predictor', # <--- ADD THIS LINE
+    'predictor',
 ]
 ROOT_URLCONF = 'config.urls'
 
