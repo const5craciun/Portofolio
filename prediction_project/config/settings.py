@@ -1,7 +1,11 @@
 # config/settings.py
+import sys
+import os
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
 
 DATABASES = {
     'default': {
