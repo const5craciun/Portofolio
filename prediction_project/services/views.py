@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from projects.simple_prediction_regression.stock_linear_regression import predict_stock_price
 
-def predict_lr(request):
+def ml_predictor(request):
     context = {}
 
     if request.method == "POST":
@@ -13,7 +13,7 @@ def predict_lr(request):
             result["ticker"] = ticker
             context = result
 
-    return render(request, "projects_html/stock_pred_lr/predict.html", context)
+    return render(request, "projects_html/stock_pred_lr/stock_prediction_lr.html", context)
 
 def home(request):
     return render(request, 'home.html')

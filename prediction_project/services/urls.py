@@ -9,5 +9,5 @@ urlpatterns = [
     # Projects
     path('projects/', views.projects_index, name='projects'),
     path('projects/nlp/', views.nlp_topic_modeling, name='nlp_topic_modeling'),
-    path('projects/ml/', views.predict_lr, name='ml_predictor'),
+    path('projects/ml/', views.ml_predictor, name='ml_predictor'),
 ]
