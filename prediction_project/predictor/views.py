@@ -52,4 +52,4 @@ def nlp_topic_modeling(request):
 
 # ML project page
 def ml_predictor(request):
-    return render(request, 'projects/ml_predictor.html')
+    return render(request, 'projects/predict.html')
