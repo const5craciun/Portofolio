@@ -25,7 +25,7 @@ def contact(request):
 
 # Projects main page
 def projects_index(request):
-    return render(request, 'projects/index.html')
+    return render(request, 'projects_html/index.html')
 
 # NLP project page
 def nlp_topic_modeling(request):
