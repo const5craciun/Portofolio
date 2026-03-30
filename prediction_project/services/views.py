@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from ..projects.simple_prediction_regression.stock_linear_regression import predict_stock_price
+from projects.simple_prediction_regression.stock_linear_regression import predict_stock_price
 
 def predict_lr(request):
     context = {}
