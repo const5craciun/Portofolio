@@ -25,6 +25,12 @@ INSTALLED_APPS = [
 ]
 ROOT_URLCONF = 'config.urls'
 
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 TEMPLATES = [
     {
