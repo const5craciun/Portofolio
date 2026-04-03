@@ -1,10 +1,84 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Contact</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .contact-item {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
 <body>
-    <h1>Contact</h2>
-    <h3>E-mail: bbogdan.craciun@gmail.com</h3>
-    <h3>Mobile: + 45 50 15 43 98</h3>
-    <h3>Github: <a href="https://github.com/const5craciun" target="_blank">https://github.com/const5craciun</a></h3>
-<a href="{% url 'home' %}">Home</a>
+
+<div class="container">
+    <h1>Contact</h1>
+
+    <p>You can reach me through the following channels:</p>
+
+    <div class="contact-item">
+        📧 <strong>Email:</strong> 
+        <a href="mailto:bbogdan.craciun@gmail.com">bbogdan.craciun@gmail.com</a>
+    </div>
+
+    <div class="contact-item">
+        📱 <strong>Mobile:</strong> +45 50 15 43 98
+    </div>
+
+    <div class="contact-item">
+        💻 <strong>GitHub:</strong> 
+        <a href="https://github.com/const5craciun" target="_blank">
+            github.com/const5craciun
+        </a>
+    </div>
+
+    <a href="{% url 'home' %}" class="btn">← Home</a>
+</div>
+
 </body>
 </html>

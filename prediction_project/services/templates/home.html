@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 12px 0;
+            padding: 10px;
+            background: #f0f4f8;
+            border-radius: 6px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
 <body>
-    <h2>Portfolio Constantin-Bogdan Craciun</h2>
+
+<div class="container">
+    <h2>Portfolio – Constantin-Bogdan Crăciun</h2>
+
+    <p>
+        Welcome to my personal portfolio. This site showcases my projects, technical skills, and progress in backend development and cloud deployment.
+    </p>
 
     <ul>
         <li>
-            <a href="{% url 'about' %}">About</a> - Description about this portfolio.
+            <a href="{% url 'about' %}">About</a><br>
+            Learn more about this project and the technologies behind it.
         </li>
+
         <li>
-            <a href="{% url 'contact' %}">Contact</a> - How you can contact me.
+            <a href="{% url 'contact' %}">Contact</a><br>
+            Get in touch with me via email, phone, or GitHub.
         </li>
+
         <li>
-            <a href="{% url 'projects' %}">Projects</a> - A list of projects that I developed.
+            <a href="{% url 'projects' %}">Projects</a><br>
+            Explore the applications and experiments I’ve built.
         </li>
     </ul>
+</div>
 
 </body>
 </html>
