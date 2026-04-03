@@ -1,37 +1,123 @@
-<h2>My Projects</h2>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
 
-<ol>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            text-align: center;
+            padding: 40px;
+        }
 
-    <li>
-        <h3>NLP Topic Modeling</h3>
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: left;
+        }
 
-        <p>
-            Master’s thesis project focused on extracting hidden themes from healthcare communication data using NLP techniques.
-        </p>
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-        <p>
-            <strong>Keywords:</strong> Python, NLP, BERTopic, LDA, HPC
-        </p>
+        ol {
+            padding-left: 20px;
+        }
 
-        <a href="{% url 'nlp_topic_modeling' %}">Open Project</a>
-    </li>
+        li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f0f4f8;
+            border-radius: 8px;
+        }
 
-    <br>
+        h3 {
+            margin-bottom: 8px;
+        }
 
-    <li>
-        <h3>ML Predictor</h3>
+        p {
+            margin: 6px 0;
+            color: #333;
+        }
 
-        <p>
-            Simple Linear Regression model for stock data prediction.
-        </p>
+        .keywords {
+            font-size: 14px;
+            color: #555;
+        }
 
-        <p>
-            <strong>Keywords:</strong> Python, Pandas, Regression
-        </p>
+        a {
+            display: inline-block;
+            margin-top: 8px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-        <a href="{% url 'ml_predictor' %}">Open Project</a>
-    </li>
+        a:hover {
+            text-decoration: underline;
+        }
 
-</ol>
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 8px 16px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
 
-<a href="{% url 'home' %}">Home</a>
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>My Projects</h2>
+
+    <ol>
+        <li>
+            <h3>NLP Topic Modeling</h3>
+
+            <p>
+                Master’s thesis project focused on extracting hidden themes from healthcare communication data using NLP techniques.
+            </p>
+
+            <p class="keywords">
+                <strong>Keywords:</strong> Python, NLP, BERTopic, LDA, HPC
+            </p>
+
+            <a href="{% url 'nlp_topic_modeling' %}">Open Project →</a>
+        </li>
+
+        <li>
+            <h3>ML Predictor</h3>
+
+            <p>
+                A simple linear regression model used to explore stock price trend prediction.
+            </p>
+
+            <p class="keywords">
+                <strong>Keywords:</strong> Python, Pandas, Regression
+            </p>
+
+            <a href="{% url 'ml_predictor' %}">Open Project →</a>
+        </li>
+    </ol>
+
+    <a href="{% url 'home' %}" class="btn">← Home</a>
+
+</div>
+
+</body>
+</html>
